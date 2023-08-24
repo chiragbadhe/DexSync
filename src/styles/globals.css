@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(fonts.css);
+
+html {
+  background-color: #111315;
+  position: relative;
+  color: white;
+  overflow-y: scroll;
+
+}
+
+.toast-message {
+  background: #1A1D1F;
+}
+
+
+
+html::before,
+html::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+  bottom: 0;
+  width: 50%;
+  /* adjust this value to adjust the width of the background images */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+/* Hide the scrollbar for all browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.default-shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.network-box-shadow {
+  box-shadow: 0px 4px 53px rgba(0, 0, 0, 0.75);
+}
+
+.rotate-innercircle {
+  animation: rotation 40s infinite;
+  animation-timing-function: linear;
+
+}
+
+.tooltip .tooltip-content{
+  cursor: default;
+  display: inline-block;
+}
+.tooltip .tooltip-content.se-auto{
+  left: auto;
+  right: auto;
+}
+.tooltip .tooltip-content.tb-auto{
+  top: auto;
+  bottom: auto;
+}
+
+.skeleton {
+  background: linear-gradient(100.58deg, #D9D9D9 -552.41%, rgba(217, 217, 217, 0) 110.82%);
+  opacity: 0.4;
+  animation: pulse 2s ease-in-out infinite;
+  background-position: 0% 50%;
+}
+
+.dex-hover {
+  background: radial-gradient(607.76% 7811.01% at -502.97% -371.11%, #6F3CE4 0%, rgba(0, 143, 109, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 1px solid #432390;
+  border-radius: 8px
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+    background-position: 0% 50%;
+  }
+
+  50% {
+    opacity: 0.4;
+    background-position: 100% 50%;
+  }
+
+  100% {
+    opacity: 0.5;
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+input[type="checkbox"] {
+  appearance: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: #272B30;
+  width: 24px;
+  height: 24px;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  display: block;
+  color: rgb(0, 0, 0);
+  background-color: #6F3CE4;
+  text-align: center;
+  line-height: 20px;
+  width: 20px;
+  font-size: 16px;
+}
+
+
+.Toastify__toast  {
+  border-radius: 24px !important;
+  border: 1px solid #003F1D;
+  padding: 12px  0px 12px 20px !important;
+}
+.Toastify__close-button {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+.Toastify__close-button > svg{
+  width: 24px;
+  height: 24px;
+}
+.Toastify__toast-body{
+  padding: 0 !important;
+}
+.Toastify__toast-container {
+  max-width: 400px !important;
+  width: 100%  !important;
+
+}
+
+
+
+
+
+/* Frame 5 */
+
