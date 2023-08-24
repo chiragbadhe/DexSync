@@ -47,7 +47,7 @@ const SwapSlippage = () => {
     <section className="space-y-[12px]">
       <InputLabel label="Swap Slippage" fontClass="" />
 
-      <div className="flex justify-between space-x-[12px] font-dm-mono text-[13px] md:text-[16px]">
+      <div className="grid grid-cols-4 gap-[12px] justify-between  font-dm-mono text-[13px] md:text-[16px]">
         <div className="w-full cursor-pointer ">
           <PredefinedOption
             percentage={0.1}

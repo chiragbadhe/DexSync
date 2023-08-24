@@ -38,8 +38,8 @@ const Setting = () => {
   return (
     <>
       <div className="flex justify-center">
-        <div className=" py-[30px] md:w-[660px]">
-          <div className="grid w-full grid-cols-3 gap-[12px]">
+        <div className=" py-[30px] md:w-[660px] w-full">
+          <div className="grid w-full grid-cols-2 md:grid-cols-3 gap-[12px]">
             {aggregators &&
               aggregators.map((aggregator, index) => {
                 let isChecked =

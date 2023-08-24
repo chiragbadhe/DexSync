@@ -9,7 +9,7 @@ import Modal from "./Modal";
 const Navbar = () => {
   return (
     <>
-      <div className="relative z-20 flex  w-full items-center border-b border-gray-custom-100 bg-gray-custom-100/30 px-[16px] py-[12px] text-[16px] font-medium ">
+      <div className="relative z-20 flex  w-full items-center border-b border-gray-custom-100 bg-gray-custom-100/30 md:px-[16px] px-[10px] py-[12px] text-[16px] font-medium ">
         <div className="flex w-full items-center justify-between">
           <div onClick={() => Router.push("/")}>
             <img src="/dexsynclogo.svg" className="max-h-[50px] -mb-[5px]" alt="" />
@@ -34,7 +34,7 @@ const Navbar = () => {
                         !isConnected
                           ? " border border-gray-custom-200"
                           : "  border-gray-custom-200 bg-transparent"
-                      }  px-[12px] py-[4px] md:px-[16px] md:py-[8px]`}
+                      }  px-[12px] py-[8px] md:px-[16px] md:py-[8px]`}
                     >
                       {address && (
                         <div className="pr-[8px]">

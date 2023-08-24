@@ -8,8 +8,8 @@ const Index = () => {
   return (
     <div className="z-30 flex flex-col">
       <Setting />
-      <div className=" flex  w-[700px]  flex-col items-center justify-center p-[20px]">
-        <div className="flex w-full max-w-[700px] bg-gray-custom-100  p-[20px] border border-gray-custom-200">
+      <div className=" flex  max-w-[700px] md:w-[700px]  flex-col items-center justify-center md:p-[20px]">
+        <div className="flex md:max-w-[700px] w-full bg-gray-custom-100  p-[20px] border border-gray-custom-200">
           <AggregationChoices />
         </div>
 

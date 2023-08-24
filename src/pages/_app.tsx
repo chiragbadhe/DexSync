@@ -29,7 +29,9 @@ export default function App({ Component, pageProps }: AppProps) {
         </Head>
         <WagmiConfig client={client}>
           <ConnectKitProvider
+            theme="midnight"
             customTheme={{
+              "--ck-border-radius": 1,
               "--ck-overlay-background": "rgba(0, 0, 0, 0.5)",
               "--ck-body-background": "#1A1D1F",
               "--ck-overlay-backdrop-filter": "blur(10px)",
