@@ -139,7 +139,7 @@ export default function Home() {
       <Navbar />
       <main className="relative z-10 h-full w-full overflow-hidden px-[8px] pb-[100px] items-center justify-center flex flex-col">
         <Index/>
-        <img src="/texture.svg" className="absolute opacity-40 top-0 h-full object-cover	" alt="" />
+        <img src="/texture.svg" className="absolute opacity-80 top-0 h-full object-cover	" alt="" />
       </main>
     </>
   );
