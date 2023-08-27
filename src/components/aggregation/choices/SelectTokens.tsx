@@ -87,7 +87,7 @@ const SelectToken: FC<SelectTokenProps> = ({
     setGettingTokenlist(true);
 
     axios
-      .get(`/api/fetchTokens`)
+      .get(`/api/fetchTokens?${selectedNetworkId}`)
       .then(({ data }) => {
         console.log(data);
         const tokenList = data.tokens;
